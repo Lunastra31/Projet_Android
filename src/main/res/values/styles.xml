@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ligne_alt">
+        <item name="android:background">#BFD3BF</item>
+    </style>
+    <style name="cellule_annuaire">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8sp</item>
+    </style>
+    <style name="cellule_liens" parents="@style/cellule_annuaire">
+        <item name="android:autoLink">all</item>
+        <item name="android:textColorLink">@color/orange_rouge</item>
+    </style>
+    <color name="orange_rouge">#E40</color>
+    <style name="theme_alerte" parent="Theme.Material3.Dark">
+        <item name="android:statusBarColor">#8C4</item>
+    </style>
+</resources>

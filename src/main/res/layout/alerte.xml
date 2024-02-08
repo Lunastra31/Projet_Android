@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_intitule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Intitulé"
+        android:labelFor="@+id/et_intitule"
+        />
+
+    <EditText
+        android:id="@+id/et_intitule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="text"
+        android:hint="@string/alerte_intitule"/>
+
+    <TextView
+        android:id="@+id/tv_lieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lieu"
+        android:labelFor="@+id/et_lieu"
+        />
+
+
+    <AutoCompleteTextView
+        android:id="@+id/et_lieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/alerte_lieu" />
+
+    <TextView
+        android:id="@+id/tv_infos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Informations"
+        android:labelFor="@id/et_intitule"
+        />
+    <!--Labelfor lie le textview à l'objet indiqué-->
+    <EditText
+        android:id="@+id/et_infos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="text|textCapSentences|textMultiLine"
+        android:hint="@string/alerte_info"
+        android:layout_weight="1"
+        android:gravity="top"
+        >
+        <requestFocus/>
+    </EditText>
+
+    <CheckBox
+        android:id="@+id/urgent_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/alerte_urgent" />
+
+    <Button
+        android:id="@+id/bt_envoyer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/alerte_envoyer"
+        android:onClick="envoyer"
+        />
+</LinearLayout>

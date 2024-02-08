@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--layout width matchparent = prend la largeur de l'élément parent
+wrap content = s'adapte à la taille du contenu
+layout_margin à la place de margin
+gravity : aligne à l'intérieur du conteneur
+layout-gravity : positionne selon l'écran
+en gravity, la gauche correspond à start et la droite à end
+layout-weight: indique l'ordre d'importance au niveau de l'occupation de
+l'espace restant sur l'écran
+-->
+    <TextView
+        android:id="@+id/tv_soustitre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/accueil_soustitre"
+        android:textColor="#EAF1EA"
+        android:background="#FF17E149"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_infos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/accueil_infos"
+        android:autoLink="phone|email"
+        android:padding="5dp"
+        />
+    <TextView
+        android:id="@+id/tv_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stub"
+        android:paddingStart="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/bt_carte"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#17E149"
+            android:text="@string/carte_titre"
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        <Button
+            android:id="@+id/bt_aquarium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#09B6E1"
+            android:text="@string/aquarium_titre"
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+           </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+    <Button
+        android:id="@+id/bt_alerte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F44336"
+        android:text="@string/alerte_titre"
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <Button
+        android:id="@+id/bt_annuaire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFC107"
+        android:text="@string/annuaire_titre"
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_animal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4CAF50"
+        android:text="@string/animal_titre"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+</LinearLayout>

@@ -1,0 +1,47 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    //utile à ANdroidStudio
+    namespace 'fr.ldnr.chloe.monZoo'
+    //Compilateur - toujours mettre à jour
+    compileSdk 34
+
+    defaultConfig {
+        //ID unique de l'app
+        applicationId "fr.ldnr.chloe.monZoo"
+        //ne peut être installé que sur une machine ayant au pire Android 23
+        minSdk 23
+        //version utilisée pour tester
+        targetSdk 33
+        //ne peut être installé que sur une machine ayant au mieux Android 33
+        maxSdk 45
+        //entier > 0 qui doit changer à chaque màj publique
+        versionCode 1
+        //nom public de la version
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    //implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

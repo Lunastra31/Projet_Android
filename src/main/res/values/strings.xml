@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Mon Zoo</string>
+    <string name="carte_titre">Carte du Zoo🗺️</string>
+    <string name="aquarium_titre">Aquarium🐟</string>
+    <string name="popcorn_titre">L\'Popcorn🍿</string>
+    <string name="carte_bienvenue">Bienvenue</string>
+    <string name="popcorn_avertissement"> Pas de popcorn pour les %3$s (%1$02d %2$s)</string>
+    <plurals name="popcorn_seconde">
+        <item quantity="one">seconde</item>
+        <item quantity="other">secondes</item>
+    </plurals>
+    <string-array name="popcorn_especes">
+        <item>poissons</item>
+        <item>dauphins</item>
+        <item>requins</item>
+    </string-array>
+    <string name="accueil_soustitre"> Appli officielle</string>
+    <string name="accueil_infos">Bienvenue sur <b>l\'application principale</b> du zoo, plus de 13000m<small><sup>2</sup></small> d\'enclos et de bassins.
+        \nPour plus d\'informations, merci de téléphoner à M.Lucien Bramart au 05.70.72.34.00.</string>
+    <string name="stub">*****</string>
+    <string name="alerte_titre">🚨 Alerte 🚨</string>
+    <string name="alerte_intitule">Intitulé</string>
+    <string name="alerte_lieu">Lieu</string>
+    <string name="alerte_info">Informations</string>
+    <string name="alerte_urgent">Urgent</string>
+    <string name="alerte_envoyer">Envoyer</string>
+    <string name="alerte_envoi">Alerte \"%1$s\" envoyée %2$s, c\' est la %3$d ème</string>
+    <string-array name="lieux" translatable="false">
+        <item>Chemin principal</item>
+        <item>Enclos des bonobos</item>
+        <item>Enclos des chèvres</item>
+        <item>Buvette</item>
+    </string-array>
+    <string name="alerte_confirmer">🚨 Confirmer l\'envoi ? 🚨</string>
+    <string name="annuaire_titre"> Annuaire ☎️</string>
+    <string name="menu_options">Options</string>
+    <string name="menu_envoyer">Envoyer</string>
+    <string name="animal_titre">🐾 Animal 🐾</string>
+    <string-array name="animaux" translatable="false">
+        <item>Loups</item>
+        <item>Chèvres</item>
+        <item>Bonobos</item>
+        <item>Python royal</item>
+    </string-array>
+</resources>

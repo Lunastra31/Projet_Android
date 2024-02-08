@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="app_name">My Zoo</string>
+        <string name="carte_titre">Map of the Zoo🗺️</string>
+        <string name="aquarium_titre">Aquarium🐟</string>
+        <string name="popcorn_titre">The Popcorn🍿</string>
+        <string name="carte_bienvenue">WELCOME STRANGER HEHEHEHE</string>
+        <string name="popcorn_avertissement"> No popcorn for the %3$s (%1$02d %2$s)</string>
+        <plurals name="popcorn_seconde">
+                <item quantity="one">second</item>
+                <item quantity="other">seconds</item>
+        </plurals>
+        <string-array name="popcorn_especes">
+                <item>salmons</item>
+                <item>thunas</item>
+                <item>dolphins</item>
+        </string-array>
+        <string name="accueil_soustitre"> Official app</string>
+        <string name="accueil_infos">WELCOME STRANGER on the main zoo app. For more information, please call Mr.Lucien Bramart at the 05.70.72.34.00.</string>
+        <string name="stub">*****</string>
+        <string name="alerte_titre">🚨 Alarm 🚨</string>
+        <string name="alerte_intitule">Description</string>
+        <string name="alerte_lieu">Location</string>
+        <string name="alerte_info">Information</string>
+        <string name="alerte_urgent">Urgent</string>
+        <string name="alerte_envoyer">Send</string>
+        <string name="alerte_envoi">Alerte \"%1$s\" envoyée %2$s, c\' est la %3$d ème</string>
+        <string-array name="lieux" translatable="false">
+                <item>Chemin principal</item>
+                <item>Enclos des singes</item>
+                <item>Enclos des chèvres</item>
+                <item>Buvette</item>
+        </string-array>
+        <string name="alerte_confirmer">🚨 Confirmer l\'envoi ? 🚨</string>
+        <string name="annuaire_titre"> Annuaire ☎️</string>
+        <string name="menu_options">Preferences</string>
+</resources>

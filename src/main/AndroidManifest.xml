@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/chienlouptcheque"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/chienlouptcheque"
+        android:supportsRtl="true"
+        tools:targetApi="31">
+        <activity android:name=".AccueilActivity"
+            android:exported="true"
+            >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                    <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+    <activity android:name=".CarteActivity"
+        android:label="@string/carte_titre" >
+        <!--Indique à l'appli qu'elle peut éditer les fichiers images de tout type
+        <action android:name="android.intent.action.EDIT" />
+        <data android:mimeType="image/*"/>-->
+    </activity>
+        <activity android:name=".AquariumActivity"
+            android:label="@string/aquarium_titre"/>
+        <activity android:name=".PopcornActivity"
+            android:label="@string/popcorn_titre"/>
+        <activity android:name=".AlerteActivity"
+            android:label="@string/alerte_titre" android:theme="@style/theme_alerte"/>
+        <activity android:name=".AnnuaireActivity"
+            android:label="@string/annuaire_titre"/>
+        <activity android:name=".AnimalActivity"
+            android:label="🐾 Animal 🐾"/>
+    </application>
+</manifest>

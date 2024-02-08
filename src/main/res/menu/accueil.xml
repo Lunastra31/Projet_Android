@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/menu_carte"
+    android:title="@string/carte_titre"
+    android:icon="@android:drawable/ic_menu_mapmode"
+    android:showAsAction="ifRoom" />
+    <item android:id="@+id/menu_animal"
+        android:title="@string/animal_titre"
+        android:icon="@android:drawable/ic_menu_search"
+        android:showAsAction="ifRoom" />
+    <item android:title="@string/menu_options"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:showAsAction="ifRoom">
+    <menu>
+        <item android:id="@+id/menu_envoyer"
+            android:title="@string/menu_envoyer"
+            android:icon="@android:drawable/ic_menu_send"
+            android:checkable="true" />
+    </menu>
+    </item>
+</menu>
+<!--Pas d'erreur ici sur les ifRoom c'est l'IDE qui dit n'imp-->

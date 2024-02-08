@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_animal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/et_animal"
+        android:text="Espèce d'animal"
+        android:textSize="18sp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/et_animal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text|textMultiLine|textCapSentences"
+        android:hint="Animal"/>
+
+    <Button
+        android:id="@+id/bt_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chercher"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/tv_infoani"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/tv_infos"
+        android:text="Informations"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_infos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
